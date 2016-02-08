@@ -17,6 +17,7 @@ Web Application requires user authorization, click "Register as a new user" link
 After registration main page which will appear.
 
  <img src="https://code.msdn.microsoft.com/site/view/file/148040/1/main1.png" width="440" alt="WebApplication Dashboard"/>
+ <br/>
  <img src="https://code.msdn.microsoft.com/site/view/file/148041/1/main2.png" width="440" alt="WebApplication Graphs"/>
 
 Layout contains:
