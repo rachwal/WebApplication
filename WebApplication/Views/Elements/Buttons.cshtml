@@ -3,6 +3,10 @@
     ViewBag.SubTitle = "Buttons";
 }
 
+@section Menu {
+    @Scripts.Render("~/Scripts/Elements/Buttons/menu")
+}
+
 <div class="row">
     <div class="col-md-12">
         <div class="box box-primary">
@@ -903,8 +907,3 @@
         </div>
     </div>
 </div>
-
-@section Scripts {
-    @Scripts.Render("~/Scripts/Elements/Buttons")
-}
-

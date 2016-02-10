@@ -3,6 +3,10 @@
     ViewBag.SubTitle = "Modals";
 }
 
+@section Menu {
+    @Scripts.Render("~/Scripts/Elements/Modals/menu")
+}
+
 @Styles.Render("~/Styles/Elements/Modals")
 
 <div class="callout callout-info">
@@ -136,7 +140,3 @@
         </div>
     </div>
 </div>
-
-@section Scripts {
-    @Scripts.Render("~/Scripts/Elements/Modals")
-}

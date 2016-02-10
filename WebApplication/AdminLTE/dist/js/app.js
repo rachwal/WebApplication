@@ -52,7 +52,7 @@ $.AdminLTE.options = {
   //Enable sidebar expand on hover effect for sidebar mini
   //This option is forced to true if both the fixed layout and sidebar mini
   //are used together
-  sidebarExpandOnHover: false,
+  sidebarExpandOnHover: true,
   //BoxRefresh Plugin
   enableBoxRefresh: true,
   //Bootstrap.js tooltip
@@ -139,9 +139,6 @@ $.AdminLTE.options = {
  */
 $(function () {
   "use strict";
-
-  //Fix for IE page transitions
-  $("body").removeClass("hold-transition");
 
   //Extend options if external options exist
   if (typeof AdminLTEOptions !== "undefined") {

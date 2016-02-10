@@ -3,6 +3,10 @@
     ViewBag.SubTitle = "Invoice";
 }
 
+@section Menu {
+    @Scripts.Render("~/Scripts/Examples/Invoice/menu")
+}
+
 <div class="callout callout-info" style="margin-bottom: 0 !important;">
     <h4><i class="fa fa-info"></i> Note:</h4>
     This page has been enhanced for printing. Click the print button at the bottom of the invoice to test.
@@ -140,8 +144,4 @@
     </div>
     <div class="clearfix"></div>
 </div>
-
-@section Scripts {
-    @Scripts.Render("~/Scripts/Examples/Invoice")
-}
 

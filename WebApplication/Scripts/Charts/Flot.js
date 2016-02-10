@@ -1,10 +1,4 @@
 ﻿$(function () {
-
-    var menuItem = document.getElementById('left.sidebar.menu.charts');
-    menuItem.classList.add('active');
-    var subMenuItem = menuItem.getElementsByClassName('left.sidebar.menu.charts.flot')[0];
-    subMenuItem.classList.add('active');
-
     /*
      * Flot Interactive Chart
      * -----------------------

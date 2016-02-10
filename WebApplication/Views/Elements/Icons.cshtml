@@ -3,6 +3,10 @@
     ViewBag.SubTitle = "Icons";
 }
 
+@section Menu {
+    @Scripts.Render("~/Scripts/Elements/Icons/menu")
+}
+
 @Styles.Render("~/Styles/Elements/Icons")
 
 <div class="row">
@@ -3857,7 +3861,3 @@
         </div>
     </div>
 </div>
-
-@section Scripts {
-    @Scripts.Render("~/Scripts/Elements/Icons")
-}

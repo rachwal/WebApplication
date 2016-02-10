@@ -4,6 +4,10 @@
     ViewBag.SubTitle = "Lockscreen";
 }
 
+@section Menu {
+    @Scripts.Render("~/Scripts/Examples/Lockscreen/menu")
+}
+
 <div class="hold-transition lockscreen">
     <div class="lockscreen-wrapper">
         <div class="lockscreen-logo">
@@ -35,8 +39,4 @@
         </div>
     </div>
 </div>
-
-@section Scripts {
-    @Scripts.Render("~/Scripts/Examples/Lockscreen")
-}
 

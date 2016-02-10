@@ -3,6 +3,10 @@
     ViewBag.SubTitle = "General";
 }
 
+@section Menu {
+    @Scripts.Render("~/Scripts/Forms/General/menu")
+}
+
 <div class="row">
     <div class="col-md-6">
         <div class="box box-primary">
@@ -315,9 +319,3 @@
         </div>
     </div>
 </div>
-
-@section Scripts {
-    @Scripts.Render("~/Scripts/Forms/General")
-}
-
-

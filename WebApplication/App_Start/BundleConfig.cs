@@ -35,65 +35,86 @@ namespace WebApplication
 
         private static void RegisterDocumentation(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/Scripts/Documentation").Include(
-                "~/Scripts/Documentation/Documentation.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Documentation/menu").Include(
+                "~/Scripts/Documentation/Documentation-menu.js"));
         }
 
         private static void RegisterExamples(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/Scripts/Examples/Blank").Include(
-                "~/Scripts/Examples/Blank.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Examples/Blank/menu").Include(
+                "~/Scripts/Examples/Blank-menu.js"));
 
-            bundles.Add(new ScriptBundle("~/Scripts/Examples/Invoice").Include(
-                "~/Scripts/Examples/Invoice.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Examples/Invoice/menu").Include(
+                "~/Scripts/Examples/Invoice-menu.js"));
 
-            bundles.Add(new ScriptBundle("~/Scripts/Examples/Lockscreen").Include(
-                "~/Scripts/Examples/Lockscreen.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Examples/Lockscreen/menu").Include(
+                "~/Scripts/Examples/Lockscreen-menu.js"));
 
             bundles.Add(new ScriptBundle("~/Scripts/Examples/Login").Include(
                 "~/Scripts/Examples/Login.js"));
 
-            bundles.Add(new ScriptBundle("~/Scripts/Examples/P404").Include(
-                "~/Scripts/Examples/P404.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Examples/Login/menu").Include(
+                "~/Scripts/Examples/Login-menu.js"));
 
-            bundles.Add(new ScriptBundle("~/Scripts/Examples/P500").Include(
-                "~/Scripts/Examples/P500.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Examples/P404/menu").Include(
+                "~/Scripts/Examples/P404-menu.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/Examples/P500/menu").Include(
+                "~/Scripts/Examples/P500-menu.js"));
 
             bundles.Add(new ScriptBundle("~/Scripts/Examples/Pace").Include(
                 "~/Scripts/Examples/Pace.js"));
 
-            bundles.Add(new ScriptBundle("~/Scripts/Examples/ProfileEx").Include(
-                "~/Scripts/Examples/ProfileEx.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Examples/Pace/menu").Include(
+                "~/Scripts/Examples/Pace-menu.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/Examples/ProfileEx/menu").Include(
+                "~/Scripts/Examples/ProfileEx-menu.js"));
 
             bundles.Add(new ScriptBundle("~/Scripts/Examples/Register").Include(
                 "~/Scripts/Examples/Register.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/Examples/Register/menu").Include(
+                "~/Scripts/Examples/Register-menu.js"));
         }
 
         private static void RegisterMailbox(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/Scripts/Mailbox").Include(
+            bundles.Add(new ScriptBundle("~/Scripts/Mailbox/Inbox").Include(
                 "~/Scripts/Mailbox/Inbox.js"));
 
-            bundles.Add(new ScriptBundle("~/Scripts/Mailbox").Include(
+            bundles.Add(new ScriptBundle("~/Scripts/Mailbox/Inbox/menu").Include(
+                "~/Scripts/Mailbox/Inbox-menu.js"));
+            
+            bundles.Add(new ScriptBundle("~/Scripts/Mailbox/Compose").Include(
                 "~/Scripts/Mailbox/Compose.js"));
 
-            bundles.Add(new ScriptBundle("~/Scripts/Mailbox").Include(
-                "~/Scripts/Mailbox/Read.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Mailbox/Compose/menu").Include(
+               "~/Scripts/Mailbox/Compose-menu.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/Mailbox/Read/menu").Include(
+                "~/Scripts/Mailbox/Read-menu.js"));
         }
 
         private static void RegisterCalendar(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/Scripts/Calendar").Include(
                 "~/Scripts/Calendar/Calendar.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/Calendar/menu").Include(
+                "~/Scripts/Calendar/Calendar-menu.js"));
         }
 
         private static void RegisterTables(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/Scripts/Tables/Simple").Include(
-                "~/Scripts/Tables/Simple.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Tables/Simple/menu").Include(
+                "~/Scripts/Tables/Simple-menu.js"));
 
             bundles.Add(new ScriptBundle("~/Scripts/Tables/Data").Include(
                 "~/Scripts/Tables/Data.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/Tables/Data/menu").Include(
+                "~/Scripts/Tables/Data-menu.js"));
         }
 
         private static void RegisterForms(BundleCollection bundles)
@@ -101,32 +122,39 @@ namespace WebApplication
             bundles.Add(new ScriptBundle("~/Scripts/Forms/Advanced").Include(
                 "~/Scripts/Forms/Advanced.js"));
 
+            bundles.Add(new ScriptBundle("~/Scripts/Forms/Advanced/menu").Include(
+                "~/Scripts/Forms/Advanced-menu.js"));
+
             bundles.Add(new ScriptBundle("~/Scripts/Forms/Editors").Include(
                 "~/Scripts/Forms/Editors.js"));
 
-            bundles.Add(new ScriptBundle("~/Scripts/Forms/General").Include(
-                "~/Scripts/Forms/General.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Forms/Editors/menu").Include(
+                "~/Scripts/Forms/Editors-menu.js"));
+
+
+            bundles.Add(new ScriptBundle("~/Scripts/Forms/General/menu").Include(
+                "~/Scripts/Forms/General-menu.js"));
         }
 
         private static void RegisterElements(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/Scripts/Elements/Buttons").Include(
-                "~/Scripts/Elements/Buttons.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Elements/Buttons/menu").Include(
+                "~/Scripts/Elements/Buttons-menu.js"));
 
-            bundles.Add(new ScriptBundle("~/Scripts/Elements/General").Include(
-                "~/Scripts/Elements/General.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Elements/General/menu").Include(
+                "~/Scripts/Elements/General-menu.js"));
 
             bundles.Add(new StyleBundle("~/Styles/Elements/General").Include(
                 "~/Styles/Elements/General.css"));
 
-            bundles.Add(new ScriptBundle("~/Scripts/Elements/Icons").Include(
-                "~/Scripts/Elements/Icons.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Elements/Icons/menu").Include(
+                "~/Scripts/Elements/Icons-menu.js"));
 
             bundles.Add(new StyleBundle("~/Styles/Elements/Icons").Include(
                 "~/Styles/Elements/Icons.css"));
 
-            bundles.Add(new ScriptBundle("~/Scripts/Elements/Modals").Include(
-                "~/Scripts/Elements/Modals.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Elements/Modals/menu").Include(
+                "~/Scripts/Elements/Modals-menu.js"));
 
             bundles.Add(new StyleBundle("~/Styles/Elements/Modals").Include(
                 "~/Styles/Elements/Modals.css"));
@@ -134,38 +162,56 @@ namespace WebApplication
             bundles.Add(new ScriptBundle("~/Scripts/Elements/Sliders").Include(
                 "~/Scripts/Elements/Sliders.js"));
 
-            bundles.Add(new ScriptBundle("~/Scripts/Elements/Timeline").Include(
-                "~/Scripts/Elements/Timeline.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Elements/Sliders/menu").Include(
+                "~/Scripts/Elements/Sliders-menu.js"));
+            
+            bundles.Add(new ScriptBundle("~/Scripts/Elements/Timeline/menu").Include(
+                "~/Scripts/Elements/Timeline-menu.js"));
         }
 
         private static void RegisterWidgets(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/Scripts/Widgets").Include(
-                "~/Scripts/Widgets/Widgets.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Widgets/menu").Include(
+                "~/Scripts/Widgets/Widgets-menu.js"));
         }
 
         private static void RegisterCharts(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/Scripts/Charts/ChartsJs").Include(
                 "~/Scripts/Charts/ChartsJs.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Charts/ChartsJs/menu").Include(
+                            "~/Scripts/Charts/ChartsJs-menu.js"));
 
             bundles.Add(new ScriptBundle("~/Scripts/Charts/Morris").Include(
                 "~/Scripts/Charts/Morris.js"));
 
+            bundles.Add(new ScriptBundle("~/Scripts/Charts/Morris/menu").Include(
+                "~/Scripts/Charts/Morris-menu.js"));
+
             bundles.Add(new ScriptBundle("~/Scripts/Charts/Flot").Include(
                 "~/Scripts/Charts/Flot.js"));
 
+            bundles.Add(new ScriptBundle("~/Scripts/Charts/Flot/menu").Include(
+                "~/Scripts/Charts/Flot-menu.js"));
+
             bundles.Add(new ScriptBundle("~/Scripts/Charts/Inline").Include(
                 "~/Scripts/Charts/Inline.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/Charts/Inline/menu").Include(
+                "~/Scripts/Charts/Inline-menu.js"));
         }
 
         private static void RegisterHome(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/Scripts/Home/DashboardV1").Include(
                 "~/Scripts/Home/DashboardV1.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Home/DashboardV1/menu").Include(
+                "~/Scripts/Home/DashboardV1-menu.js"));
 
             bundles.Add(new ScriptBundle("~/Scripts/Home/DashboardV2").Include(
                 "~/Scripts/Home/DashboardV2.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Home/DashboardV2/menu").Include(
+                "~/Scripts/Home/DashboardV2-menu.js"));
         }
 
         private static void RegisterAccount(BundleCollection bundles)
@@ -194,7 +240,7 @@ namespace WebApplication
             
             // dist
             bundles.Add(new ScriptBundle("~/AdminLTE/dist/js").Include(
-                "~/AdminLTE/dist/js/app.min.js"));
+                "~/AdminLTE/dist/js/app.js"));
 
             bundles.Add(new StyleBundle("~/AdminLTE/dist/css").Include(
                 "~/AdminLTE/dist/css/admin-lte.min.css"));

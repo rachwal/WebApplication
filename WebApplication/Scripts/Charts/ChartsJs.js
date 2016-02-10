@@ -1,9 +1,4 @@
 ﻿$(function () {
-    var menuItem = document.getElementById('left.sidebar.menu.charts');
-    menuItem.classList.add('active');
-    var subMenuItem = menuItem.getElementsByClassName('left.sidebar.menu.charts.chartjs')[0];
-    subMenuItem.classList.add('active');
-
     /* ChartJS
      * -------
      * Here we will create a few charts using ChartJS

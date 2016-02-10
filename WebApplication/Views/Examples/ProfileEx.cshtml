@@ -3,6 +3,10 @@
     ViewBag.SubTitle = "Profile";
 }
 
+@section Menu {
+    @Scripts.Render("~/Scripts/Examples/ProfileEx/menu")
+}
+
 <div class="row">
     <div class="col-md-3">
         <div class="box box-primary">
@@ -286,7 +290,6 @@
 
 @section Scripts {
     @Scripts.Render("~/AdminLTE/plugins/icheck/js")
-    @Scripts.Render("~/Scripts/Examples/ProfileEx")
 }
 
 

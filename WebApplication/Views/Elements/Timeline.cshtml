@@ -3,6 +3,10 @@
     ViewBag.SubTitle = "Timeline";
 }
 
+@section Menu {
+    @Scripts.Render("~/Scripts/Elements/Timeline/menu")
+}
+
 <div class="row">
     <div class="col-md-12">
         <ul class="timeline">
@@ -129,7 +133,3 @@
         </div>
     </div>
 </div>
-
-@section Scripts {
-    @Scripts.Render("~/Scripts/Elements/Timeline")
-}

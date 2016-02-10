@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -27,6 +28,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -377,39 +379,54 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\Account\Login.js" />
     <Content Include="Scripts\Account\Register.js" />
+    <Content Include="Scripts\Calendar\Calendar-menu.js" />
     <Content Include="Scripts\Calendar\Calendar.js" />
+    <Content Include="Scripts\Charts\ChartsJs-menu.js" />
     <Content Include="Scripts\Charts\ChartsJs.js" />
     <Content Include="Scripts\Charts\Flot.js" />
+    <Content Include="Scripts\Charts\Inline-menu.js" />
     <Content Include="Scripts\Charts\Inline.js" />
+    <Content Include="Scripts\Charts\Morris-menu.js" />
     <Content Include="Scripts\Charts\Morris.js" />
-    <Content Include="Scripts\Documentation\Documentation.js" />
-    <Content Include="Scripts\Elements\Buttons.js" />
-    <Content Include="Scripts\Elements\General.js" />
-    <Content Include="Scripts\Elements\Icons.js" />
-    <Content Include="Scripts\Elements\Modals.js" />
+    <Content Include="Scripts\Documentation\Documentation-menu.js" />
+    <Content Include="Scripts\Elements\Buttons-menu.js" />
+    <Content Include="Scripts\Elements\General-menu.js" />
+    <Content Include="Scripts\Elements\Icons-menu.js" />
+    <Content Include="Scripts\Elements\Modals-menu.js" />
+    <Content Include="Scripts\Elements\Sliders-menu.js" />
     <Content Include="Scripts\Elements\Sliders.js" />
-    <Content Include="Scripts\Elements\Timeline.js" />
-    <Content Include="Scripts\Examples\Blank.js" />
-    <Content Include="Scripts\Examples\Invoice.js" />
-    <Content Include="Scripts\Examples\Lockscreen.js" />
+    <Content Include="Scripts\Elements\Timeline-menu.js" />
+    <Content Include="Scripts\Examples\Blank-menu.js" />
+    <Content Include="Scripts\Examples\Invoice-menu.js" />
+    <Content Include="Scripts\Examples\Lockscreen-menu.js" />
+    <Content Include="Scripts\Examples\Login-menu.js" />
     <Content Include="Scripts\Examples\Login.js" />
-    <Content Include="Scripts\Examples\P404.js" />
-    <Content Include="Scripts\Examples\P500.js" />
+    <Content Include="Scripts\Examples\P404-menu.js" />
+    <Content Include="Scripts\Examples\P500-menu.js" />
+    <Content Include="Scripts\Examples\Pace-menu.js" />
     <Content Include="Scripts\Examples\Pace.js" />
-    <Content Include="Scripts\Examples\ProfileEx.js" />
+    <Content Include="Scripts\Examples\ProfileEx-menu.js" />
+    <Content Include="Scripts\Examples\Register-menu.js" />
     <Content Include="Scripts\Examples\Register.js" />
+    <Content Include="Scripts\Forms\Advanced-menu.js" />
     <Content Include="Scripts\Forms\Advanced.js" />
+    <Content Include="Scripts\Forms\Editors-menu.js" />
     <Content Include="Scripts\Forms\Editors.js" />
-    <Content Include="Scripts\Forms\General.js" />
+    <Content Include="Scripts\Forms\General-menu.js" />
+    <Content Include="Scripts\Home\DashboardV1-menu.js" />
     <Content Include="Scripts\Home\DashboardV1.js" />
+    <Content Include="Scripts\Home\DashboardV2-menu.js" />
     <Content Include="Scripts\Home\DashboardV2.js" />
+    <Content Include="Scripts\Mailbox\Compose-menu.js" />
     <Content Include="Scripts\Mailbox\Compose.js" />
+    <Content Include="Scripts\Mailbox\Inbox-menu.js" />
     <Content Include="Scripts\Mailbox\Inbox.js" />
-    <Content Include="Scripts\Mailbox\Read.js" />
+    <Content Include="Scripts\Mailbox\Read-menu.js" />
     <Content Include="Scripts\Shared\_Layout.js" />
+    <Content Include="Scripts\Tables\Data-menu.js" />
     <Content Include="Scripts\Tables\Data.js" />
-    <Content Include="Scripts\Tables\Simple.js" />
-    <Content Include="Scripts\Widgets\Widgets.js" />
+    <Content Include="Scripts\Tables\Simple-menu.js" />
+    <Content Include="Scripts\Widgets\Widgets-menu.js" />
     <Content Include="Styles\Elements\General.css" />
     <Content Include="Styles\Elements\Icons.css" />
     <Content Include="Styles\Elements\Modals.css" />
@@ -471,15 +488,14 @@
     <Content Include="Views\Forms\Advanced.cshtml" />
     <Content Include="Views\Forms\Editors.cshtml" />
     <Content Include="Views\Forms\General.cshtml" />
-    <Content Include="Views\Home\Advanced.cshtml" />
-    <Content Include="Views\Home\Editors.cshtml" />
-    <Content Include="Views\Home\General.cshtml" />
     <Content Include="Views\Mailbox\Compose.cshtml" />
     <Content Include="Views\Mailbox\Inbox.cshtml" />
     <Content Include="Views\Mailbox\Read.cshtml" />
     <Content Include="Views\Tables\Data.cshtml" />
     <Content Include="Views\Tables\Simple.cshtml" />
     <Content Include="Views\Widgets\Index.cshtml" />
+    <Content Include="Views\Home\DashboardV1.cshtml" />
+    <Content Include="Views\Home\DashboardV2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -501,11 +517,18 @@
     <Content Include="AdminLTE\plugins\ionicons\fonts\ionicons.woff" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\Charts\Flot-menu.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">

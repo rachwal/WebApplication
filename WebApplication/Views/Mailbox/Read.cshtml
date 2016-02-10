@@ -3,6 +3,10 @@
     ViewBag.SubTitle = "Read";
 }
 
+@section Menu {
+    @Scripts.Render("~/Scripts/Mailbox/Read/menu")
+}
+
 @Styles.Render("~/AdminLTE/plugins/icheck/css")
 
 <div class="row">
@@ -183,7 +187,6 @@
 
 @section Scripts {
     @Scripts.Render("~/AdminLTE/plugins/icheck/js")
-    @Scripts.Render("~/Scripts/Mailbox/Read.js")
 }
 
 

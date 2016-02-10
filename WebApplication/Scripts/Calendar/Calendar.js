@@ -1,7 +1,4 @@
 ﻿$(function () {
-    var menuItem = document.getElementById('left.sidebar.menu.calendar');
-    menuItem.classList.add('active');
-
     /* initialize the external events
     -----------------------------------------------------------------*/
     function ini_events(ele) {

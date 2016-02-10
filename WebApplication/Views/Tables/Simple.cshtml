@@ -3,6 +3,10 @@
     ViewBag.SubTitle = "Simple";
 }
 
+@section Menu {
+    @Scripts.Render("~/Scripts/Tables/Simple/menu")
+}
+
 <div class="row">
     <div class="col-md-6">
         <div class="box">
@@ -303,9 +307,5 @@
         </div>
     </div>
 </div>
-
-@section Scripts {
-    @Scripts.Render("~/Scripts/Tables/Simple")
-}
 
 

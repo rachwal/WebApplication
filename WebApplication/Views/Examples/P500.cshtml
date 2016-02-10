@@ -3,6 +3,10 @@
     ViewBag.SubTitle = "P500";
 }
 
+@section Menu {
+    @Scripts.Render("~/Scripts/Examples/P500/menu")
+}
+
 <div class="error-page">
     <h2 class="headline text-red">500</h2>
     <div class="error-content">
@@ -24,8 +28,5 @@
     </div>
 </div>
 
-@section Scripts {
-    @Scripts.Render("~/Scripts/Examples/P500")
-}
 
 

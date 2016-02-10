@@ -1,9 +1,4 @@
 ﻿$(function () {
-    var menuItem = document.getElementById('left.sidebar.menu.forms');
-    menuItem.classList.add('active');
-    var subMenuItem = menuItem.getElementsByClassName('left.sidebar.menu.forms.advanced')[0];
-    subMenuItem.classList.add('active');
-
     //Initialize Select2 Elements
     $('.select2').select2();
 

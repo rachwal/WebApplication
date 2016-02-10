@@ -1,12 +1,6 @@
 ﻿$(function () {
-
     "use strict";
-
-    var menuItem = document.getElementById('left.sidebar.menu.charts');
-    menuItem.classList.add('active');
-    var subMenuItem = menuItem.getElementsByClassName('left.sidebar.menu.charts.morris')[0];
-    subMenuItem.classList.add('active');
-
+    
     // AREA CHART
     var area = new Morris.Area({
         element: 'revenue-chart',

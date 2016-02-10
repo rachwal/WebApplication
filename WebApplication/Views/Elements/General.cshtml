@@ -3,6 +3,10 @@
     ViewBag.SubTitle = "General";
 }
 
+@section Menu {
+    @Scripts.Render("~/Scripts/Elements/General/menu")
+}
+
 @Styles.Render("~/Styles/Elements/General")
 
 <div class="box box-default color-palette-box">
@@ -733,7 +737,3 @@
         </div>
     </div>
 </div>
-
-@section Scripts {
-    @Scripts.Render("~/Scripts/Elements/General")
-}

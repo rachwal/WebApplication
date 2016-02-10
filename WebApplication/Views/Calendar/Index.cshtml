@@ -3,6 +3,10 @@
     ViewBag.SubTitle = "";
 }
 
+@section Menu {
+    @Scripts.Render("~/Scripts/Calendar/menu")
+}
+
 @Styles.Render("~/AdminLTE/plugins/fullcalendar/css")
 <link rel="stylesheet" href="@Styles.Url("~/AdminLTE/plugins/fullcalendar/css/print")" media="print">
 @Styles.Render("~/AdminLTE/dist/css")

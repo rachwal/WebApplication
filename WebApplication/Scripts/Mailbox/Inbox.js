@@ -1,9 +1,4 @@
-﻿$(function() {
-    var menuItem = document.getElementById('left.sidebar.menu.mailbox');
-    menuItem.classList.add('active');
-    var subMenuItem = menuItem.getElementsByClassName('left.sidebar.menu.mailbox.inbox')[0];
-    subMenuItem.classList.add('active');
-
+﻿$(function () {
     //Enable iCheck plugin for checkboxes
     //iCheck for checkbox and radio inputs
     $('.mailbox-messages input[type="checkbox"]').iCheck({
